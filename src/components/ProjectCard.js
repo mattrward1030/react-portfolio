@@ -11,27 +11,15 @@ const styles = {
 
 function ProjectCard(props) {
     return (
-        <tr>
-            <td className="text-center">
-                <img src={props.picture} alt="profile" />
-            </td>
-            <td className="text-center align-middle">
-                {props.first} {props.last}
-            </td>
-            <td className="text-center align-middle">
-                {props.phone}
-            </td>
-            <td className="text-center align-middle links">
-                <a style={styles.a} href="mailto:someone@yoursite.com">{props.email}</a>
-            </td>
-            <td className="text-center align-middle">
-                {props.city}, {props.country}
-            </td>
-            <td className="text-center align-middle">
-                {props.dateOfBirth}
-            </td>
+        <figure>
+            <a href={props.href}>
+                <img className="img-fluid thumbnail" src={props.image} alt={props.alt} />
 
-        </tr >
+            </a>
+            <figcaption className="pt-2">
+                <a href={props.github}>{props.figcaption}</a>
+            </figcaption>
+        </figure>
     )
 }
 
