@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/Footer";
-import ProjectsContainer from "./components/ProjectsContainer;
-import NoMatch from "./pages/NoMatch";
+import NoMatch from "./components/NoMatch";
+import ProjectsContainer from "./components/ProjectsContainer";
+
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -26,7 +26,7 @@ const styles = {
 function About() {
     return (
         <header style={styles.header}>
-            <h1 style={styles.heading}>Employee Directory</h1>
+            <h1 style={styles.heading}>react portfolio</h1>
             <p style={styles.content}>Click on carrots to filter by heading or use the search box to narrow your results.</p>
         </header>
     );

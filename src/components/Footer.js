@@ -25,10 +25,15 @@ const styles = {
 
 function Footer() {
     return (
-        <header style={styles.header}>
-            <h1 style={styles.heading}>Employee Directory</h1>
-            <p style={styles.content}>Click on carrots to filter by heading or use the search box to narrow your results.</p>
-        </header>
+        <div className="container-fluid">
+            <dic className="row">
+                <div className="col-md-3 text-center"><a href="https://github.com/mattrward1030">Github</a></div>
+                <div class="col-md-3 text-center"><a
+                    href="https://www.linkedin.com/in/matthew-ward-167b96209/">Linkedin</a></div>
+                <div className="col-md-3 text-center">mattrward1030@gmail.com</div>
+                <div className="col-md-3 text-center">856-473-1845</div>
+            </dic>
+        </div>
     );
 
 }
