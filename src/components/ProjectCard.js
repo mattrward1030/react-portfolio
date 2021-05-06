@@ -11,15 +11,17 @@ const styles = {
 
 function ProjectCard(props) {
     return (
-        <figure>
-            <a href={props.href}>
-                <img className="img-fluid thumbnail" src={props.image} alt={props.alt} />
+        <div className="col-md-6">
+            <figure>
+                <a href={props.href}>
+                    <img className="img-fluid thumbnail" src={props.image} alt={props.alt} />
 
-            </a>
-            <figcaption className="pt-2">
-                <a href={props.github}>{props.figcaption}</a>
-            </figcaption>
-        </figure>
+                </a>
+                <figcaption className="pt-2">
+                    <a href={props.github}>{props.figcaption}</a>
+                </figcaption>
+            </figure>
+        </div>
     )
 }
 
