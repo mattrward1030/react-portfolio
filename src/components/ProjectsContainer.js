@@ -1,7 +1,5 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard"
-import Footer from "../components/Footer"
-
 import "../styles/style.css"
 import fungId from "../images/fung-id.png";
 import babySittr from "../images/babysittr.png";
@@ -9,7 +7,7 @@ import empDir from "../images/emp-dir-1.png";
 import budget from "../images/budget.png";
 import workout from "../images/exercises.png";
 import empTrack from "../images/employee-tracker-screenshot.png";
-import profile from "../images/profile-picture.jpeg";
+
 
 
 
@@ -72,23 +70,13 @@ const projectCards = [
 function ProjectsContainer() {
     return (
         <body>
-            <div className="intro-left">
-                <div className="container-fluid full-height">
-                    <div className="row align-items-center text-center full-height">
-                        <div className="col">
-                            <img src={profile} alt="profile" class="avatar" />
-                            <p className="display-5">Matthew Ward</p>
-                            <p className="display-6">Computer Programmer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div className="conatiner-fluid">
                 <div className="row">
-                    <div className="col-md-4"></div>
-                    <div className="col-md-8 panel-right px-0">
+
+                    <div className="col-md-12 panel-right px-0">
                         <section className="projects section">
-                            <h2 className="display-6 mb-5">My projects:</h2>
+                            <h2 className="display-6 mb-5 mt-5 text-center">My Work</h2>
                             <div className="container-fluid">
                                 <div className="row gy-5">
                                     {projectCards.map((item) => {
@@ -108,7 +96,7 @@ function ProjectsContainer() {
                     </div>
                 </div>
             </div>
-            <Footer />
+
 
         </body >
 

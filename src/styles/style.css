@@ -8,14 +8,14 @@ body , html {
   font-size: 1.5rem;
   font-family: 'BioRhyme', serif;
   color: #4a697a;
+  margin:"5px"
 }
 
 .intro-left {
   background: url(../images/background-2.jpg);
-  position: absolute;
-  left: 0;
-  width: 33.3333333%;
-  height: 166%;
+  
+  width: 100%;
+  height: 200%;
   color: #54302b;
 }
 
@@ -57,12 +57,15 @@ body , html {
 .footer {
   background-color: #ffe1cc;
   font-size: 1rem;
-  
+  position: sticky;
+  bottom: 0;
 }
 
 .footer a {
   text-underline-position: under;
   color:#4a697a ;
+  position: sticky;
+  bottom: 0;
 }
 
 .footer a:hover{
