@@ -1,16 +1,11 @@
 import React from "react";
 
-const styles = {
-    a: {
-        color: "black",
-        textUnderlineOffset: "4px"
-    }
 
-}
 
 
 function ProjectCard(props) {
     return (
+
         <div className="col-md-6">
             <figure>
                 <a href={props.href}>
@@ -22,6 +17,7 @@ function ProjectCard(props) {
                 </figcaption>
             </figure>
         </div>
+
     )
 }
 

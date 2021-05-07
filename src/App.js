@@ -1,33 +1,32 @@
-import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Component } from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/Footer";
+
+import About from "./components/About";
 import NoMatch from "./components/NoMatch";
 import ProjectsContainer from "./components/ProjectsContainer";
 
 
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            < ProjectsContainer />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route>
-            <NoMatch />
-          </Route>
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+      <HashRouter>
+        <div>
+          <Switch />
+          <Header />
+          <Switch>
+            <Route path="/" exact component={ProjectsContainer} />
+            <Route path="/about" component={About} />
+            <Route>
+              <NoMatch />
+            </Route>
+          </Switch>
+
+        </div>
+      </HashRouter>
+    );
+  }
 }
 
 export default App;

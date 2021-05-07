@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard"
+import Footer from "../components/Footer"
+
 import "../styles/style.css"
 import fungId from "../images/fung-id.png";
 import babySittr from "../images/babysittr.png";
@@ -69,7 +71,7 @@ const projectCards = [
 
 function ProjectsContainer() {
     return (
-        <div className="section">
+        <body>
             <div className="intro-left">
                 <div className="container-fluid full-height">
                     <div className="row align-items-center text-center full-height">
@@ -85,7 +87,7 @@ function ProjectsContainer() {
                 <div className="row">
                     <div className="col-md-4"></div>
                     <div className="col-md-8 panel-right px-0">
-                        <div className="projects">
+                        <section className="projects section">
                             <h2 className="display-6 mb-5">My projects:</h2>
                             <div className="container-fluid">
                                 <div className="row gy-5">
@@ -100,17 +102,18 @@ function ProjectsContainer() {
                                             />
                                         );
                                     })}
-
                                 </div>
                             </div>
-                        </div>
-
+                        </section>
                     </div>
-
                 </div>
-
             </div>
-        </div>
+            <Footer />
+
+        </body >
+
     )
 }
 export default ProjectsContainer;
+
+
