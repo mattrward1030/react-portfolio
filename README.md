@@ -12,9 +12,7 @@ To install this repo on your local drive you would have to clone the ssh key fro
 
 ## Finished project
 
-My page is live on github!
-
- https://mattrward1030.github.io/Portfolio-3/
+Check out the live application on <a href=https://mattrward1030.github.io/react-portfolio/#/>Github pages!</a>
 
  ### My portfolio
 
@@ -38,6 +36,8 @@ My page is live on github!
 <li>This application has clear readble font and colors that do not cause the user eyestrain.</li>
 <li>Feautures a mobile first design that responds to any viewport size.</li>
 <li>A somewhat detailed about me that gives a quick intro to who I am and why I am chosing this career path.</li>
+<li>Site hosted live on <a href=https://mattrward1030.github.io/react-portfolio/#/>Github pages!</a> </li>
+
 </ul>
 
 ## Tests
