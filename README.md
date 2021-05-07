@@ -1,6 +1,4 @@
-# react-portfolio
-
-# Portfolio
+# React-Portfolio
 
 ## Description 
 
