@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-
+import Resume from "./components/Resume";
 import About from "./components/About";
 import NoMatch from "./components/NoMatch";
 import ProjectsContainer from "./components/ProjectsContainer";
@@ -18,6 +18,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={ProjectsContainer} />
             <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
             <Route>
               <NoMatch />
             </Route>

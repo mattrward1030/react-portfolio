@@ -11,18 +11,11 @@ const styles = {
         minHeight: 50,
         textAlign: "center",
         borderBottom: "4px solid #b3c0c9",
-        color: "#ffe1cc"
+        color: "#ffe1cc",
+        textDecorationLine: "none",
     },
-    // heading: {
-    //     lineHeight: 2,
-    //     fontSize: "2.5rem",
-    //     color: "white",
-    //     padding: "0 20px"
-    // },
-    // content: {
-    //     fontSize: "1rem",
-    //     color: "white"
-    // }
+
+
 };
 
 function Header() {
@@ -31,12 +24,23 @@ function Header() {
         <header style={styles.header} >
             <div className="conatiner-fluid">
                 <div className="row">
-                    <Link style={{ textDecoration: "none" }} to="/about">
-                        <a style={styles.header} href="#">
-                            ABOUT
+
+                    <h1 className="col-md-12">Welcome to My Portfolio</h1>
+                    <Link to="/">
+                        <a style={styles.header}>
+                            HOME
                         </a>
                     </Link>
-                    <h1 className="col-md-12">react portfolio</h1>
+                    <Link to="/about">
+                        <a style={styles.header}>
+                            ABOUT ME
+                        </a>
+                    </Link>
+                    <Link to="/resume">
+                        <a style={styles.header}>
+                            RESUME
+                        </a>
+                    </Link>
                 </div>
             </div>
         </header >
