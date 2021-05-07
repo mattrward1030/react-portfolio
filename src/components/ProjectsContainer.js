@@ -69,7 +69,7 @@ const projectCards = [
 
 function ProjectsContainer() {
     return (
-        <section>
+        <div className="section">
             <div className="intro-left">
                 <div className="container-fluid full-height">
                     <div className="row align-items-center text-center full-height">
@@ -104,12 +104,13 @@ function ProjectsContainer() {
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
-        </section>
+        </div>
     )
 }
 export default ProjectsContainer;
